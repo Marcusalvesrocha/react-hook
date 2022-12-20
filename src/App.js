@@ -8,11 +8,11 @@ function App() {
   const reverseClass = reverse ? 'reverse' : 'App-logo';
 
   const handleClick = () => {
-    setReverse(!reverse);
+    setReverse((reverse) => !reverse);
   };
 
   const handleSetCounter = () => {
-    setCounter(counter + 1);
+    setCounter((counter) => counter + 1);
   };
 
   return (
