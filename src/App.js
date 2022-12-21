@@ -5,7 +5,7 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
 // eslint-disable-next-line react/prop-types
 const Button = ({ incrementButton }) => {
-  console.log('filho redenrizou');
+  //console.log('filho redenrizou');
   return <button onClick={() => incrementButton(10)}>+</button>;
 };
 
@@ -14,7 +14,7 @@ Button.propsTypes = {
 };
 
 const evenFn = () => {
-  console.log('h2 clicado');
+  //console.log('h2 clicado');
 };
 
 function App() {
@@ -46,11 +46,11 @@ function App() {
       document.querySelector('h2')?.removeEventListener('click', evenFn);
     };
   }, []);
-  console.log('Pai redenrizou');
+  //console.log('Pai redenrizou');
 
   // com dependencia
   useEffect(() => {
-    console.log('contador mudou para ', counter);
+    //console.log('contador mudou para ', counter);
   }, [counter]);
 
   const btn = useMemo(() => {
